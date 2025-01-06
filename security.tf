@@ -1,5 +1,6 @@
 resource "aws_security_group" "security_group" {
-    vpc_id = aws_vpc.my_vpc.id
+    # vpc_id = aws_vpc.my_vpc.id
+    name        = "default-sg"
     
     egress {
         from_port = 0
